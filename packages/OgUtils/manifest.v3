@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.0</value>
+  <value name="listACL">Default</value>
+  <value name="name">OgUtils</value>
+  <value name="build">21292</value>
+  <value name="description">Auto_OgUtils_is deployment set</value>
+  <value name="time">2015-03-01 20:54:02 GMT</value>
+  <value name="jvm_version">1.6.0_21</value>
+  <null name="publisher"/>
+  <value name="patch_nums"></value>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="OgUtils.config:CreateStorage"/>
+    <null name="OgUtils.internal.init:init"/>
+    <null name="OgUtils.soap.SoapHeaderHandler:registerHandler"/>
+    <null name="OgUtils.logger.Soap:registerHandler"/>
+  </record>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="Utils">*</value>
+    <value name="UtilsConfig">*</value>
+    <value name="KogunLogger">*</value>
+  </record>
+  <null name="shutdown_services"/>
+  <null name="replication_services"/>
+  <value name="webappLoad">yes</value>
+  <array name="patch_history" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="name">2018-05-21_365GR_myBuild_1528235015702</value>
+      <value name="version">1.0</value>
+      <value name="build">21292</value>
+      <value name="description">Auto_OgUtils_is deployment set</value>
+      <value name="time">2018-06-05 21:43:35 GMT</value>
+      <value name="jvm_version">1.6.0_21</value>
+      <null name="publisher"/>
+      <value name="patch_nums"></value>
+      <null name="target_pkg_version"/>
+      <null name="source_server_version"/>
+      <null name="target_server_version"/>
+      <null name="type"/>
+      <null name="retainPatchHistory"/>
+      <null name="target_pkg_name"/>
+    </record>
+  </array>
+</Values>

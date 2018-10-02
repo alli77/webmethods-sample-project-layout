@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="svc_type">java</value>
+  <value name="svc_subtype">unknown</value>
+  <value name="svc_sigtype">java 3.5</value>
+  <record name="svc_sig" javaclass="com.wm.util.Values">
+    <record name="sig_in" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">cryptKey</value>
+          <value name="field_type">object</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">inputString</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">Crypt algorithm to use, default is DES</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">cryptAlgorithm</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
+          <value name="nillable">true</value>
+        </record>
+      </array>
+    </record>
+    <record name="sig_out" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">cryptedString</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">cryptError</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+        </record>
+      </array>
+    </record>
+  </record>
+  <value name="node_comment">crypt the input string using the 8 byte key provided to a hex coded string
+
+  NOTE: 
+  Crypt algorithm: DES/ECB/PKCS5Padding works with java 1.4.  DES works with java 1.3.
+                   Default crypt algorithm is DES.
+  key: Byte array. Must be of length 8
+  inputString: String to crypt
+
+:::Unit test:
+16.12.2005 HB
+
+:::Revision History:
+
+27.01.2005 HB // Created.
+16.12.2005 HB // Add cryptAlgorithm parameter 
+                 (problem with conflict in java 1.3 and java 1.4)
+26.01.2006 AXE cryptAlgorithm 
+
+:::Copyright:
+
+Copyright © 2005 , Kögun Ltd. All rights reserved.
+</value>
+  <value name="stateless">no</value>
+  <value name="caching">no</value>
+  <value name="prefetch">no</value>
+  <value name="cache_ttl">15</value>
+  <value name="prefetch_level">1</value>
+  <value name="audit_level">off</value>
+  <value name="check_internal_acls">no</value>
+  <value name="icontext_policy">$null</value>
+  <value name="system_service">no</value>
+  <value name="retry_max">0</value>
+  <value name="retry_interval">0</value>
+  <value name="svc_in_validator_options">none</value>
+  <value name="svc_out_validator_options">none</value>
+  <value name="auditoption">0</value>
+  <record name="auditsettings" javaclass="com.wm.util.Values">
+    <value name="document_data">0</value>
+    <value name="startExecution">false</value>
+    <value name="stopExecution">false</value>
+    <value name="onError">true</value>
+  </record>
+</Values>

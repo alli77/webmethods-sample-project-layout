@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">imageConverter</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">dHJ5CnsKCglqYXZhLmlvLkZpbGUgZkluID0gbmV3IGphdmEuaW8uRmlsZSgiYzpcXGJsZS5ibXAi
+KTsKCWlmKCFmSW4uZXhpc3RzKCkpCgkJdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oIk5vdCBl
+eGlzdCIpOwoKCglqYXZhLmF3dC5pbWFnZS5CdWZmZXJlZEltYWdlIGJpID0gamF2YXguaW1hZ2Vp
+by5JbWFnZUlPLnJlYWQoZkluKTsKaWYoYmk9PW51bGwpCgl0aHJvdyBuZXcgU2VydmljZUV4Y2Vw
+dGlvbigiIGJpIGVyIG51bGwiKTsKCglqYXZhLmlvLkZpbGUgZiA9IG5ldyBqYXZhLmlvLkZpbGUo
+ImM6XFxteWltYWdlLnBuZyIpOwoJamF2YXguaW1hZ2Vpby5JbWFnZUlPLndyaXRlKGJpLCAicG5n
+IiwgZik7Cn0KY2F0Y2goRXhjZXB0aW9uIGUpCnsKCXRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9u
+KGUpOwp9CiA=</value>
+</Values>

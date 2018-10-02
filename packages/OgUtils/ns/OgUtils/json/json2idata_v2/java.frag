@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">json2idata_v2</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgSURDID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpJRGF0YSBvdXRfaWRhdGEg
+PSANSURhdGFGYWN0b3J5LmNyZWF0ZSgpOwpJRGF0YUN1cnNvciBvdXRDID0gb3V0X2lkYXRhLmdl
+dEN1cnNvcigpOwpTdHJpbmcgcz1JRGF0YVV0aWwuZ2V0U3RyaW5nKElEQywgImpzb24iKTsNCnRy
+eSB7DQogIEpTT05PYmplY3QganNvbiA9IG5ldyBKU09OT2JqZWN0KHMpOwogIHdhbGtfanNvbihq
+c29uLCBvdXRDKTsKfSBjYXRjaCAoRXhjZXB0aW9uIGUpIHsNCiAgdGhyb3cgbmV3IFNlcnZpY2VF
+eGNlcHRpb24oZS5nZXRDbGFzcygpKyIgIitlLmdldE1lc3NhZ2UoKSk7DQp9DQpJRGF0YVV0aWwu
+cHV0KElEQywgIkRvY3VtZW50Iiwgb3V0X2lkYXRhKTsKb3V0Qy5kZXN0cm95KCk7Cg1JREMuZGVz
+dHJveSgpOyANCg==</value>
+</Values>

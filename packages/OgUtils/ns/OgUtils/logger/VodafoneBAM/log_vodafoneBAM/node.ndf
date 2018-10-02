@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="svc_type">flow</value>
+  <value name="svc_subtype">default</value>
+  <value name="svc_sigtype">java 3.5</value>
+  <record name="svc_sig" javaclass="com.wm.util.Values">
+    <record name="sig_in" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">The name of the iCare process that is being worked on.</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">FormLabel</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">ID of a specific iCare issue.</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">IcareId</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">Possible values: Start, Error, Resolved, Cancelled, Finished</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">Action</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">Which user (the user could be some system, CCB etc.) was responsible for the action?</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">Actor</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_comment">Some description of what happened. Could be simply "Process started" or it could be a detailed description of an exception that occurred.</value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <null name="field_usereditable"/>
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+          </record>
+          <value name="field_name">Description</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+      </array>
+    </record>
+    <record name="sig_out" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+      </array>
+    </record>
+  </record>
+  <value name="node_comment">Task 5165, VodafoneBAM
+- - - - - - - - - - -
+Vodafone Buisiness Activity Monitoring is a system that tracks and logs to a database the development of iCare tasks. 
+It logs the iCare process name, the iCare ID, activity, actor, and description (perhaps detailed one if there is some 
+error). 
+
+On the other end of this system is an Excel spreadsheet that reads from the database and does some analytics. 
+For example: what processes fail the most often or what issues yield the highest gain from solving etc.
+
+A more detailed description of this task is available in the attachment of [Task 5165].
+
+
+::: Revision History:
+2011-06-08 JONRH First revision. [Task 5165]
+</value>
+  <value name="stateless">no</value>
+  <value name="caching">no</value>
+  <value name="prefetch">no</value>
+  <value name="cache_ttl">15</value>
+  <value name="prefetch_level">1</value>
+  <value name="template">OgUtils_logger_VodafoneBAM_log_vodafoneBAM</value>
+  <value name="template_type">html</value>
+  <value name="audit_level">off</value>
+  <value name="check_internal_acls">no</value>
+  <value name="icontext_policy">$null</value>
+  <value name="system_service">no</value>
+  <value name="retry_max">0</value>
+  <value name="retry_interval">0</value>
+  <value name="svc_in_validator_options">none</value>
+  <value name="svc_out_validator_options">none</value>
+  <value name="auditoption">0</value>
+  <record name="auditsettings" javaclass="com.wm.util.Values">
+    <value name="document_data">0</value>
+    <value name="startExecution">false</value>
+    <value name="stopExecution">false</value>
+    <value name="onError">true</value>
+  </record>
+  <value name="pipeline_option">1</value>
+</Values>

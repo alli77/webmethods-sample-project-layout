@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">CreditCardNumberValidation</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ci8vIHBpcGVsaW5lCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7CglTdHJpbmcJQ2FyZE51bWJlciA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBpcGVsaW5l
+Q3Vyc29yLCAiQ2FyZE51bWJlciIgKTsKCmJvb2xlYW4gaXNWYWxpZCA9IGZhbHNlOwpTdHJpbmcg
+Zmlyc3RDaGFyID0gIiI7CiAKaWYoQ2FyZE51bWJlci5sZW5ndGgoKSA+IDEpCnsKCWZpcnN0Q2hh
+ciA9IENhcmROdW1iZXIuc3Vic3RyaW5nKDAsIDEpOwoKCWlmKGZpcnN0Q2hhci5lcXVhbHMoIjMi
+KSB8fCBmaXJzdENoYXIuZXF1YWxzKCI0IikgfHwgZmlyc3RDaGFyLmVxdWFscygiNSIpKQoJCWlz
+VmFsaWQgPSBDaGVja0NhcmROdW1iZXIoQ2FyZE51bWJlcik7Cn0KCklEYXRhVXRpbC5wdXQoIHBp
+cGVsaW5lQ3Vyc29yLCAiaXNWYWxpZCIsIGlzVmFsaWQgKTsKcGlwZWxpbmVDdXJzb3IuZGVzdHJv
+eSgpOwo=</value>
+</Values>

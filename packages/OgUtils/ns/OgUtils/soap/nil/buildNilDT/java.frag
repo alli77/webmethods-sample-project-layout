@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">buildNilDT</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKSURhdGFb
+XQlkdCA9IElEYXRhVXRpbC5nZXRJRGF0YUFycmF5KCBwaXBlbGluZUN1cnNvciwgImR0IiApOwpJ
+RGF0YQlEb2MgPSBJRGF0YVV0aWwuZ2V0SURhdGEoIHBpcGVsaW5lQ3Vyc29yLCAiRG9jIiApOwpp
+ZiAoIGR0ICE9IG51bGwgJiYgRG9jICE9IG51bGwpIHsKCUlEYXRhCWJ1aWxkRG9jID0gSURhdGFG
+YWN0b3J5LmNyZWF0ZSgpOwoJSURhdGFDdXJzb3IgYnVpbGRDID0gYnVpbGREb2MuZ2V0Q3Vyc29y
+KCk7CglJRGF0YUN1cnNvciBEb2NDID0gRG9jLmdldEN1cnNvcigpOwoJYnVpbGROaWxEVChkdCwg
+RG9jQywgYnVpbGRDICk7CglJRGF0YVV0aWwucHV0KCBwaXBlbGluZUN1cnNvciwgImJ1aWxkRG9j
+IiwgYnVpbGREb2MgKTsKCWJ1aWxkQy5kZXN0cm95KCk7Cn0KcGlwZWxpbmVDdXJzb3IuZGVzdHJv
+eSgpOw==</value>
+</Values>

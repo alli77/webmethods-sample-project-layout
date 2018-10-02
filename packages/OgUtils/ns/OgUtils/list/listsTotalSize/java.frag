@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">listsTotalSize</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKSURhdGEJ
+cGlwZSA9IElEYXRhVXRpbC5nZXRJRGF0YSggcGlwZWxpbmVDdXJzb3IsICJwaXBlIiApOwppbnQg
+blRvdGFsU2l6ZU9mTGlzdHM9MDsKaWYgKCBwaXBlICE9IG51bGwpCnsKCUlEYXRhQ3Vyc29yIHBp
+cGVDdXJzb3IgPSBwaXBlLmdldEN1cnNvcigpOwoJCgl3aGlsZShwaXBlQ3Vyc29yLm5leHQoKSkK
+CXsKCQlpZihwaXBlQ3Vyc29yLmdldFZhbHVlKCkgaW5zdGFuY2VvZiBPYmplY3RbXSkKCQl7CgkJ
+CW5Ub3RhbFNpemVPZkxpc3RzICs9ICgoT2JqZWN0W10pcGlwZUN1cnNvci5nZXRWYWx1ZSgpKS5s
+ZW5ndGg7CgkJfQoJfQoJcGlwZUN1cnNvci5kZXN0cm95KCk7Cn0KCklEYXRhVXRpbC5wdXQoIHBp
+cGVsaW5lQ3Vyc29yLCAidG90YWxTaXplT2ZMaXN0cyIsIG5Ub3RhbFNpemVPZkxpc3RzKyIiICk7
+CnBpcGVsaW5lQ3Vyc29yLmRlc3Ryb3koKTsK</value>
+</Values>
