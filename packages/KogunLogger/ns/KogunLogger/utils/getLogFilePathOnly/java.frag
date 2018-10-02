@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getLogFilePathOnly</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">dHJ5CnsKICAvLyBwaXBlbGluZQogIElEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxp
+bmUuZ2V0Q3Vyc29yKCk7CiAgU3RyaW5nICBsb2dnZXIgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBw
+aXBlbGluZUN1cnNvciwgImxvZ2dlciIgKTsKICBTdHJpbmcgIGZpbGVkYXRlID0gSURhdGFVdGls
+LmdldFN0cmluZyggcGlwZWxpbmVDdXJzb3IsICJmaWxlZGF0ZSIgKTsKICBTdHJpbmcgIGZpbGVw
+YXRoID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxpbmVDdXJzb3IsICJmaWxlcGF0aCIgKTsK
+ICBTdHJpbmcgczsKICBpZiggZmlsZXBhdGggPT0gbnVsbCB8fCBmaWxlcGF0aC5sZW5ndGgoKSA9
+PSAwKSAgCglzID0gbmV3IFN0cmluZyhsb2dwYXRoKTsKICBlbHNlCiAgICAgICAgcyA9IG5ldyBT
+dHJpbmcoZmlsZXBhdGgpOwoKICAvLyBwaXBlbGluZQogIElEYXRhVXRpbC5wdXQoIHBpcGVsaW5l
+Q3Vyc29yLCAibG9nZmlsZXBhdGgiLCBzICk7CiAgcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOwp9
+CmNhdGNoKEV4Y2VwdGlvbiBlICkKewogIHRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKCBlLmdl
+dE1lc3NhZ2UoKSApOwp9ICAg</value>
+</Values>

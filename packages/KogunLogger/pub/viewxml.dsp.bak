@@ -1,0 +1,4 @@
+%invoke KogunLogger.ui:createXMLData%
+  %value xmldata%
+%endinvoke%
+

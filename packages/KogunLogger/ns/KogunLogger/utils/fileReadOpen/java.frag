@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">fileReadOpen</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">dHJ5CnsKICAvLyBwaXBlbGluZQogIElEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxp
+bmUuZ2V0Q3Vyc29yKCApOwogIFN0cmluZyAgcGF0aCA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBp
+cGVsaW5lQ3Vyc29yLCAicGF0aCIgKTsKICAKCiAgCiAgQnVmZmVyZWRSZWFkZXIgcmVhZCA9ICBu
+ZXcgQnVmZmVyZWRSZWFkZXIobmV3IEZpbGVSZWFkZXIoIHBhdGggKSk7ICAKCgogIElEYXRhVXRp
+bC5wdXQoIHBpcGVsaW5lQ3Vyc29yLCAiQnVmZmVyZWRSZWFkZXIiLCByZWFkICk7CiAgcGlwZWxp
+bmVDdXJzb3IuZGVzdHJveSggKTsKICAKfQpjYXRjaChFeGNlcHRpb24gZSApCnsgCiAgdGhyb3cg
+bmV3IFNlcnZpY2VFeGNlcHRpb24oIGUuZ2V0TWVzc2FnZSggKSApOwp9ICAg</value>
+</Values>

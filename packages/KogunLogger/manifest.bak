@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.1</value>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="KogunLogger.internal:startup"/>
+    <null name="KogunLogger.log4j:init"/>
+  </record>
+  <record name="shutdown_services" javaclass="com.wm.util.Values">
+    <null name="KogunLogger.log4j:deinit"/>
+  </record>
+  <null name="replication_services"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="UtilsConfig">1.*</value>
+    <value name="Utils">1.*</value>
+    <value name="WmPublic">6.*</value>
+  </record>
+  <value name="listACL">Default</value>
+  <value name="name">KogunLogger</value>
+  <value name="build">001</value>
+  <value name="description"></value>
+  <value name="time">2006-06-30 13:19:46 GMT</value>
+  <value name="jvm_version">1.4.2</value>
+  <value name="publisher">snari.kogun.is</value>
+  <value name="patch_nums"></value>
+</Values>

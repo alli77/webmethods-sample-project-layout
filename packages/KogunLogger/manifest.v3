@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.1</value>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="KogunLogger.internal:startup"/>
+  </record>
+  <record name="shutdown_services" javaclass="com.wm.util.Values">
+    <null name="KogunLogger.log4j:deinit"/>
+  </record>
+  <null name="replication_services"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="UtilsConfig">1.*</value>
+    <value name="Utils">1.*</value>
+    <value name="WmPublic">6.*</value>
+  </record>
+  <value name="listACL">Default</value>
+  <value name="name">KogunLogger</value>
+  <value name="build">001</value>
+  <value name="description">log4j</value>
+  <value name="time">2015-03-01 17:26:18 GMT</value>
+  <value name="jvm_version">1.5.0_10</value>
+  <null name="publisher"/>
+  <value name="patch_nums"></value>
+  <array name="patch_history" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="name">2018-09-19_myBuild_1537345074681</value>
+      <value name="version">1.1</value>
+      <value name="build">001</value>
+      <value name="description">log4j</value>
+      <value name="time">2018-09-19 08:17:54 GMT</value>
+      <value name="jvm_version">1.5.0_10</value>
+      <null name="publisher"/>
+      <value name="patch_nums"></value>
+    </record>
+  </array>
+</Values>

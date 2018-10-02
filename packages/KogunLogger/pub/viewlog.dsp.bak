@@ -1,0 +1,311 @@
+<HTML>
+  <HEAD>
+    <TITLE>Logs</TITLE>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <LINK REL="stylesheet" TYPE="text/css" HREF="log.css">
+    <SCRIPT>
+    function checkEverything()
+    {
+      if (!verifyRequiredNonNegNumber('logform', 'numlines'))
+        {
+          alert("Number of lines to display must be a non negative number.");
+          return false;
+        }
+      return true;
+    }
+     function viewXML(xml)
+     {
+        myRef = window.open('','ViewXML');
+        myRef.close();
+        myRef = window.open('','ViewXML');
+        myRef.document.writeln(xml);
+       
+     }
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+
+<script language="javascript">
+function transfer(thepage)
+{
+  %ifvar logger%
+  document.location.href="viewlog.dsp?logger=%value logger%";
+  %else%
+  document.location.href=thepage;
+  %endif%
+}
+function fetch2( ) {
+document.logview.firstline.value = document.logview.page.value * document.logview.numberoflines.value;
+fetch();
+}
+
+function fetch( ){
+  var decValue;
+  if (document.logview.descending[0]!=null) {
+    if (document.logview.descending[0].checked){decValue = 1;}
+    else {decValue = 0;}
+  } else {devValue = 0;}
+  document.location.href="viewlog.dsp?logger=%value logger%&firstline="+document.logview.firstline.value+"&filedate="+document.logview.filedate.value+"&tofiledate="+document.logview.tofiledate.value+"&lowestlevel="+document.logview.lowestlevel.value+"&numberoflines="+document.logview.numberoflines.value+"&descending="+decValue+"&search="+document.logview.search.value+"&searchattr="+document.logview.searchattr.value+"&SessionID="+document.logview.SessionID.value+"&logData="+document.logview.logData.value+"&caller="+document.logview.caller.value;
+}
+
+function copySessionID(sid)
+{
+  document.getElementById('sidField').value=sid;
+}
+</script>
+
+    <FORM NAME="logview" ACTION="viewlog.dsp" METHOD="POST">>
+      <input type="hidden" name="logger" value="%value logger%"></input>
+       <TABLE width=100%>
+            <TR>
+              <TD class="menusection-Logs" colspan="2">
+                Logs &gt; %value logger%
+              </TD>
+            </TR>
+            <TR>
+
+        %invoke KogunLogger.ui:getLog_1%
+	    %onerror%
+	    <p>Error while fetching logfiles <br> %value error% %value errorMessage%
+	%endinvoke%
+         <td colspan=2 class="padding">&nbsp;</TD>
+            </TR>
+            <TR>
+               <TD>
+
+
+%invoke KogunLogger.pub:islog2db%
+%ifvar log2Db equals('true')%
+
+
+
+
+                  <TABLE class="tableView">
+                    <TR>
+                      <TD colspan=4 class="heading">DB Log display controls</TD>
+                    </TR>
+                    <TR>
+                      <TD class="oddrow" nowrap>
+                      From date (yyyymmdd)
+                        %ifvar filedate%
+                          <input name="filedate" type="text" value="%value filedate%" size="8" maxlength="8"></input>
+                        %else%
+                          <input name="filedate" type="text" size="8" maxlength="8"></input>
+                        %endif%
+                      </TD>
+                      <TD class="oddrow" nowrap>
+                       To date (yyyymmdd)
+                        %ifvar tofiledate%
+                          <input name="tofiledate" type="text" value="%value tofiledate%" size="8" maxlength="8"></input>
+                        %else%
+                          <input name="tofiledate" type="text" size="8" maxlength="8"></input>
+                        %endif%
+                      </TD>
+			   <TD class="oddrow" nowrap>
+                      First line
+                        %ifvar firstline%
+                          <input name="firstline" type="text" value="%value firstline%" size="5" maxlength="4"></input>
+                        %else%
+                          <input name="firstline" type="text" size="5" maxlength="4" value="1"></input>
+                        %endif%
+                      </td>
+                      <TD class="oddrow" nowrap>
+                      Line count
+                        %ifvar numberoflines%
+                          <input name="numberoflines" type="text" value="%value numberoflines%" size="5" maxlength="4"></input>
+                        %else%
+                          <input name="numberoflines" type="text" size="5" maxlength="4" value="30"></input>
+                        %endif%
+			   </TD>
+                    </TR>
+                    <TR>
+                     <TD class="oddrow" nowrap>
+                      Lowest level
+                        %invoke KogunLogger.ui:getLevels%
+                        %onerror%
+                          <p>Error while fetching logfiles <br> %value error% %value errorMessage%</p>
+                        %endinvoke%
+                        %value selLevelString%
+                      </TD>
+                       
+		
+
+
+                     <TD class="oddrow" nowrap>
+
+                      %invoke KogunLogger.ui:getDescending%
+                        %onerror%
+                          <p>Error while fetching logfiles <br> %value error% %value errorMessage%</p>
+                        %endinvoke%
+                        %value radDescString%
+                      </TD>
+                      <td class="oddrow" colspan="2" nowrap>
+                   
+                      SessionID <input id="sidField" name="SessionID" type="text" value="%value SessionID%" size="40" ></input>
+                      
+                      </td>
+                      </tr>
+                      <tr>
+                      <td class="oddrow"  nowrap>
+                   
+                      Caller<input name="caller" type="text" value="%value caller%" size="20" ></input>
+                      
+                      </td>
+                      <td class="oddrow"  nowrap>
+                   
+                      Logdata<input name="logData" type="text" value="%value logData%" size="20" ></input>
+                      
+                      </td>
+                      
+                    </TR>
+                    %invoke KogunLogger.ui:getSAttrs%
+                      %value satrString%
+                    %endinvoke%
+                    
+                    <tr ><td colspan ="4">
+                    <div class="action">
+                    &nbsp;&nbsp;&nbsp;<input type="submit" value="Refresh" ></input>
+                    </div>
+                    </td></tr>
+                  </TABLE>
+
+
+
+%else%
+
+
+
+
+    <TABLE class="tableView">
+                    <TR>
+                      <TD colspan=4 class="heading">NO DB Log display controls</TD>
+                    </TR>
+                    <TR>
+                      <TD class="oddrow" nowrap>
+                      Date (yyyymmdd)
+                        %ifvar filedate%
+                          <input name="filedate" type="text" value="%value filedate%" size="8" maxlength="8"></input>
+                        %else%
+                          <input name="filedate" type="text" size="8" maxlength="8"></input>
+                        %endif%
+                         
+                        %ifvar tofiledate%
+                          <input name="tofiledate" type="hidden" value="%value tofiledate%"></input>
+                        %else%
+                          <input name="tofiledate" type="hidden" value=""></input>
+                        %endif%
+
+                      </TD>
+                      <TD class="oddrow" nowrap>
+                      First line
+                        %ifvar firstline%
+                          <input name="firstline" type="text" value="%value firstline%" size="5" maxlength="4"></input>
+                        %else%
+                          <input name="firstline" type="text" size="5" maxlength="4"></input>
+                        %endif%
+                      </TD>
+                      <TD class="oddrow" nowrap>
+                      Line count
+                        %ifvar numberoflines%
+                          <input name="numberoflines" type="text" value="%value numberoflines%" size="5" maxlength="4"></input>
+                        %else%
+                          <input name="numberoflines" type="text" size="5" maxlength="4"></input>
+                        %endif%
+				%ifvar search%
+                          <input name="search" type="hidden" value="%value search%"></input>
+                        %else%
+                          <input name="search" type="hidden" value=""></input>
+                        %endif%
+				<input name="searchattr" type="hidden" value=""></input>
+
+
+                      </TD>
+                    </TR>
+                    <TR>
+                     <TD class="oddrow" nowrap>
+                      Lowest level
+                        %invoke KogunLogger.ui:getLevels%
+                        %onerror%
+                          <p>Error while fetching logfiles <br> %value error% %value errorMessage%</p>
+                        %endinvoke%
+                        %value selLevelString%
+                      </TD>
+                      <td class="oddrow" colspan="2" nowrap>
+                   
+                      SessionID <input id="sidField" name="SessionID" type="text" value="%value SessionID%" size="40" ></input>
+                      
+                      </td>
+                     
+                    <tr>
+                    <TD class="oddrow" nowrap>
+                        %invoke KogunLogger.ui:getDescending%
+                        %onerror%
+                          <p>Error while fetching logfiles <br> %value error% %value errorMessage%</p>
+                        %endinvoke%
+                        %value radDescString%
+                     </td>
+                     <td class="oddrow"  nowrap>
+                   
+                      Caller<input name="caller" type="text" value="%value caller%" size="20" ></input>
+                      
+                      </td>
+                      <td class="oddrow"  nowrap>
+                   
+                      Logdata<input name="logData" type="text" value="%value logData%" size="20" ></input>
+                      
+                      </td>
+                    </TR>
+                    </tr>
+                    <tr ><td colspan ="3">
+                    <div class="action">
+                    &nbsp;&nbsp;&nbsp;<input type="button" value="Refresh" onclick="javascript:fetch();"></input>
+                    </div>
+                    </td></tr>
+                  </TABLE>
+
+
+
+
+%endif%
+%endinvoke%
+
+
+
+
+
+
+               </TD>
+              <TD class="padding">&nbsp;</TD>
+            </TR>
+            <TR>
+              <TD class="padding">&nbsp;</TD>
+            </TR>
+
+            <TR>
+        <TD>
+        </form>
+
+          <TABLE class="tableView" width=100%>
+                  <TR>
+
+                    <TD class="heading">Log Entries</TD>
+
+                  </TR>
+
+
+
+                  <TR>
+                    <TD class="oddrow-l">
+                      %ifvar logger%
+                        %value tblLogString%
+                      %endif%
+                    </TD>
+                  </TR>
+
+               </TABLE>
+              </TD>
+            </TR>
+          </TABLE>
+     </BODY>

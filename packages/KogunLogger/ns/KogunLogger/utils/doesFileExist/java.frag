@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">doesFileExist</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">dHJ5CnsKICAvLyBwaXBlbGluZQogIElEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxp
+bmUuZ2V0Q3Vyc29yKCk7CiAgU3RyaW5nIGZpbGVwYXRoID0gSURhdGFVdGlsLmdldFN0cmluZygg
+cGlwZWxpbmVDdXJzb3IsICJmaWxlcGF0aCIgKTsKCiAgRmlsZSB0ZW1wRmlsZSA9IG5ldyBGaWxl
+KCBmaWxlcGF0aCApOwogIGJvb2xlYW4gZXhpc3RzID0gdGVtcEZpbGUuZXhpc3RzKCApOwogIFN0
+cmluZyBmaWxlRXhpc3RzID0gQm9vbGVhbi50b1N0cmluZyggZXhpc3RzICk7CiAgLy8gcGlwZWxp
+bmUKICBJRGF0YVV0aWwucHV0KCBwaXBlbGluZUN1cnNvciwgImZpbGVFeGlzdHMiLCBmaWxlRXhp
+c3RzICk7CiAgcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOwp9CmNhdGNoKEV4Y2VwdGlvbiBlICkK
+ewogIHRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKCBlLmdldE1lc3NhZ2UoKSApOwp9</value>
+</Values>
