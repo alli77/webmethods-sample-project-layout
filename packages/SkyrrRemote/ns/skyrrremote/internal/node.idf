@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_nsName">skyrrremote.internal</value>
+  <value name="encodeutf8">true</value>
+  <value name="shared">cHVibGljIHN0YXRpYyBDb250ZXh0IGxvY2FsX29wZW5Db250ZXh0ICgKICBTdHJpbmcgc2VydmVy
+LCBTdHJpbmcgcG9ydCwKICBTdHJpbmcgdXNlck5hbWUsCiAgU3RyaW5nIHBhc3N3b3JkLAogIFN0
+cmluZyBmYWlsb3ZlcnNlcnZlciApIHRocm93cyBTZXJ2aWNlRXhjZXB0aW9uCnsKICB0cnkgCiAg
+ewogICAgU3RyaW5nIHNlcnZlcnBvcnQgPSBzZXJ2ZXIrIjoiK3BvcnQ7CiAgICBDb250ZXh0IHgg
+PSBuZXcgQ29udGV4dCgpOwogICAgeC5zZXRSZXRyeVNlcnZlcihmYWlsb3ZlcnNlcnZlcisiOiIr
+cG9ydCk7CiAgICB4LmNvbm5lY3Qoc2VydmVycG9ydCwgdXNlck5hbWUsIHBhc3N3b3JkKTsKCiAg
+ICByZXR1cm4geDsKICB9CiAgY2F0Y2goRXhjZXB0aW9uIGUpIAogIHsKICAgIHRocm93IG5ldyBT
+ZXJ2aWNlRXhjZXB0aW9uKGUpOwogIH0KfQoKcHVibGljIHN0YXRpYyB2b2lkIGxvY2FsX2Nsb3Nl
+Q29udGV4dCAoCiAgQ29udGV4dCB4ICkgdGhyb3dzIFNlcnZpY2VFeGNlcHRpb24KewogIHRyeSAK
+ICB7CiAgICB4LmRpc2Nvbm5lY3QoKTsKICAgIHggPSBudWxsOwogIH0KICBjYXRjaChFeGNlcHRp
+b24gZSkgCiAgewogICAgdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oZSk7CiAgfQp9CgpwdWJs
+aWMgc3RhdGljIElEYXRhIGxvY2FsX2ludm9rZUNvbnRleHQgKAogIENvbnRleHQgeCwgU3RyaW5n
+IHNlcnZpY2UsIElEYXRhIGRhdGEgKSB0aHJvd3MgU2VydmljZUV4Y2VwdGlvbgp7CiAgdHJ5IAog
+IHsKICAgIC8vIHBhcnNlIHRoZSBzdHJpbmcKICAgIFN0cmluZ1tdIHogPSBzZXJ2aWNlLnNwbGl0
+KCI6Iik7CiAgICBTdHJpbmcgcGFja2FnZU5hbWUgPSB6WzBdOwogICAgU3RyaW5nIHNlcnZpY2VO
+YW1lID0gelsxXTsKICAgIHJldHVybiB4Lmludm9rZShwYWNrYWdlTmFtZSwgc2VydmljZU5hbWUs
+IGRhdGEpOwogIH0KICBjYXRjaChFeGNlcHRpb24gZSkgCiAgewogICAgdGhyb3cgbmV3IFNlcnZp
+Y2VFeGNlcHRpb24oZSk7CiAgfQp9Cgo=</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.util.*</value>
+    <value>com.wm.util.coder.IDataCoder</value>
+    <value>com.wm.util.coder.IDataXMLCoder</value>
+    <value>com.wm.app.b2b.server.Service</value>
+    <value>com.wm.lang.ns.NSName</value>
+    <value>java.io.*</value>
+    <value>com.wm.app.b2b.client.Context</value>
+  </array>
+</Values>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="templates" javaclass="com.wm.util.Values">
+    <record name="skyrrremote_pub_executeremote.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_bytes.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_base64.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_base64_state.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_bytes_state.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_zip.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+    <record name="skyrrremote_pub_executeRemote_zip_state.xml" javaclass="com.wm.util.Values">
+      <value name="encoding">UTF8</value>
+    </record>
+  </record>
+</Values>
