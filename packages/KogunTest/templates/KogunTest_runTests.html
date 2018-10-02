@@ -1,0 +1,21 @@
+<html><body>
+<table>
+<tr><td><b>Flow</b></td><td><b>Status</b></td><td><b>Name</b></td><td><b>ErrorMessage</b></td><td><b>Linecount</b></td><td><b>Percent tested</b></td><td><b>Time</b></td></tr>
+%loop tests%
+%ifvar Error equals('false')%
+<tr style="color: green;">
+%else%
+<tr style="color: red;">
+%end%
+<td>%value flow%</td><td></td><td></td><td>Failed %value Nr_failed% of %value Nr%</td><td>%value stats/linecount%</td><td>%value stats/percent_tested%</td><td></td></tr>
+	%loop output%
+		%ifvar Error equals('false')%
+			<tr style="color: green;"><td></td><td>OK</td><td>%value name%</td>
+		%else%
+			<tr style="color: red;"><td></td><td>Fail</td><td>%value name%</td>
+		%end%
+		<td>%value Result%</td><td></td><td></td><td>%value time% ms</td></tr>
+	%end%
+%end%
+</table>
+</body><html>

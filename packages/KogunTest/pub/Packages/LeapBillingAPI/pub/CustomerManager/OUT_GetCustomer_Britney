@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="Customer" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="job_title:X"></value>
+      <value name="registration_date:T">Wed Nov 22 16:27:45 GMT 2006</value>
+      <value name="main_phone:X"></value>
+      <value name="date_of_birth:D">Mon Jan 01 00:00:00 GMT 1996</value>
+      <value name="billing_last_name:X"></value>
+      <value name="rerate_request_ind:b">false</value>
+      <value name="suspend_exp_date:T">Thu Jan 01 00:00:00 GMT 1970</value>
+      <value name="Event_name:X">Monthly 22nd Day Billing</value>
+      <value name="external_cust_id:X">SpearsB</value>
+      <value name="historic_cycle_date:T">Thu Jan 01 00:00:00 GMT 1970</value>
+      <value name="resource_operation_obj_num:O">0</value>
+      <value name="part_id:h">-1</value>
+      <value name="zip_code:X"></value>
+      <value name="email:X"></value>
+      <value name="billing_suspension_ind:N">None</value>
+      <value name="billing_status:s">2</value>
+      <value name="last_eoc_run_date:T">Fri Dec 31 22:00:00 GMT 1999</value>
+      <value name="business_phone:X"></value>
+      <value name="invoice_type_obj_num:O">5277921</value>
+      <value name="billing_address:X"></value>
+      <value name="historic_eoc_run_date:T">Tue Jan 19 00:00:00 GMT 2038</value>
+      <value name="billing_sequence:h">0</value>
+      <value name="secondary_phone:X"></value>
+      <value name="middle_name:X"></value>
+      <value name="main_password:X">Jn#Û?IN_ë5°zNZ"Ofì0]</value>
+      <value name="process_id:O">0</value>
+      <value name="exemption_ind:b">false</value>
+      <value name="next_cycle_date:T">Thu Dec 21 22:00:00 GMT 2006</value>
+      <value name="OID:o">0:522:96193754</value>
+      <value name="billing_state:X"></value>
+      <value name="national_id:X"></value>
+      <value name="address_two:X"></value>
+      <value name="fax:X"></value>
+      <value name="market_name:X">SpeedNet</value>
+      <value name="residential_ind:N">None</value>
+      <value name="last_billing_cycle_event_seq:O">0</value>
+      <value name="ticketowner:b">false</value>
+      <value name="billing_county:X"></value>
+      <value name="market_obj_num:O">5833157</value>
+      <value name="credit_class_obj_num:O">1</value>
+      <value name="reseller_cust_obj_num:O">0</value>
+      <value name="billing_first_name:X"></value>
+      <value name="billing_zip_code:X"></value>
+      <value name="billable_cust_eff_date:T">Fri Dec 31 22:00:00 GMT 1999</value>
+      <value name="company:X"></value>
+      <value name="last_invoice_obj_num:O">0</value>
+      <value name="main_currency_bank_obj_num:O">96193756</value>
+      <value name="billing_title:X"></value>
+      <value name="billable_cust_ind:b">true</value>
+      <value name="main_user_name:X">SpearsB</value>
+      <value name="customer_status:s">1</value>
+      <value name="use_home_address_ind:b">true</value>
+      <value name="billing_cycle_event_seq:O">0</value>
+      <value name="county:X"></value>
+      <value name="second_name:X">Spears</value>
+      <value name="wrc_registration:b">false</value>
+      <value name="country:X">Afghanistan</value>
+      <value name="first_name:X">Britney Jr.</value>
+      <value name="billing_middle_name:X"></value>
+      <value name="grace_days:s">0</value>
+      <value name="event_obj_num:O">94613168</value>
+      <value name="status_eff_date:T">Wed Nov 22 16:27:45 GMT 2006</value>
+      <value name="salutation:s">1</value>
+      <value name="suspend_eff_date:T">Thu Jan 01 00:00:00 GMT 1970</value>
+      <value name="last_invoice_date:D">Sat Jan 01 00:00:00 GMT 2000</value>
+      <value name="payment_method_obj_num:O">4</value>
+      <value name="billing_main_phone:X"></value>
+      <value name="city:X"></value>
+      <value name="last_cycle_date:T">Fri Dec 31 22:00:00 GMT 1999</value>
+      <value name="geo_code:X"></value>
+      <value name="billing_address_two:X"></value>
+      <value name="remarks:X"></value>
+      <value name="billing_job_title:X"></value>
+      <value name="customer_type:s">1</value>
+      <value name="billing_country:X"></value>
+      <value name="invoice_threshold:d">-1.0</value>
+      <value name="cust_permissions:s">1</value>
+      <value name="status_change_reason:X">0</value>
+      <value name="state:X"></value>
+      <value name="historic_invoice_date:D">Sat Jan 01 00:00:00 GMT 2000</value>
+      <value name="billing_city:X"></value>
+      <value name="address:X"></value>
+      <value name="invoice_obj_num:O">0</value>
+    </record>
+    <record name="result" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="errorCode">0</value>
+    </record>
+  </record>
+</IDataXMLCoder>
